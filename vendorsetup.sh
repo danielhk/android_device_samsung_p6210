@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2008 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,15 +14,11 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/p6210/overlay
+# This file is executed by build/envsetup.sh, and can use anything
+# defined in envsetup.sh.
+#
+# In particular, you can add lunch options with the add_lunch_combo
+# function: add_lunch_combo generic-eng
 
-# Include common smdk4210-tab config
--include device/samsung/smdk4210-tab/BoardConfigCommon.mk
-
-TARGET_OTA_ASSERT_DEVICE := p6210,GT-P6210,GT-P6211,GT-P6210L
-
-TARGET_KERNEL_CONFIG := cyanogenmod_p6210_defconfig
-
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/p6210/bluetooth
-
-BOARD_HAS_EARPIECE := true
+add_lunch_combo aosp_p6210-userdebug
+add_lunch_combo omni_p6210-userdebug

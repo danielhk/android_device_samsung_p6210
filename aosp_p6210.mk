@@ -15,8 +15,8 @@
 #
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 600
-TARGET_SCREEN_WIDTH := 1024
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 1280
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -26,7 +26,7 @@ PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := p6210
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-P6210
-PRODUCT_NAME := cm_p6210
+PRODUCT_NAME := aosp_p6210
 PRODUCT_RELEASE_NAME := GT-P6210
 
 # Set product name and build fingerprint

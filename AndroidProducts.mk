@@ -15,4 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_p6210.mk \
+    $(LOCAL_DIR)/omni_p6210.mk \
     $(LOCAL_DIR)/cm.mk

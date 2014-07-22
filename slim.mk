@@ -14,9 +14,15 @@
 # limitations under the License.
 #
 
+# Specify phone tech before including full_phone
+$(call inherit-product, vendor/slim/config/gsm.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 600
 TARGET_SCREEN_WIDTH := 1024
+
+# Inherit from our slim product configuration
+$(call inherit-product, vendor/slim/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -26,7 +32,7 @@ PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := p6210
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-P6210
-PRODUCT_NAME := cm_p6210
+PRODUCT_NAME := slim_p6210
 PRODUCT_RELEASE_NAME := GT-P6210
 
 # Set product name and build fingerprint

@@ -21,12 +21,15 @@ TARGET_SCREEN_WIDTH := 1024
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Inherit from our omni product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := p6210
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-P6210
-PRODUCT_NAME := cm_p6210
+PRODUCT_NAME := omni_p6210
 PRODUCT_RELEASE_NAME := GT-P6210
 
 # Set product name and build fingerprint
