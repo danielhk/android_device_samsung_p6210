@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,6 +22,8 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/p6210/overlay
 TARGET_OTA_ASSERT_DEVICE := p6210,GT-P6210,GT-P6211,GT-P6210L
 
 TARGET_KERNEL_CONFIG := cyanogenmod_p6210_defconfig
+
+CUSTOM_BUILD := true
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/p6210/bluetooth
 
