@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2015 The OmniROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ DEVICE_RESOLUTION := 1024x600
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_BRAND := Samsung
+PRODUCT_BRAND := GalaxyTab
 PRODUCT_DEVICE := p6210
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-P6210
@@ -33,4 +33,5 @@ PRODUCT_NAME := omni_p6210
 PRODUCT_RELEASE_NAME := GT-P6210
 
 # Set product name and build fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-P6210 BUILD_FINGERPRINT="samsung/GT-P6210/GT-P6210:4.3.1/JLS36I:user/release-keys" PRIVATE_BUILD_DESC="GT-P6210-user 4.3.1 JLS36I release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-P6210 BUILD_FINGERPRINT="samsung/GalaxyTab/GT-P6210:6.0.0/MRA58K:userdebug/release-keys" PRIVATE_BUILD_DESC="GT-P6210-userdebug 6.0.0 MRA58K release-keys"
+
