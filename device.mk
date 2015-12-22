@@ -32,3 +32,6 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 PRODUCT_COPY_FILES += \
     device/samsung/smdk4210-tab/configs/etc/gps.cer:system/etc/gps.cer \
     device/samsung/smdk4210-tab/configs/etc/gps.xml:system/etc/gps.xml
+
+PRODUCT_PACKAGES += \
+    libsecril-client
