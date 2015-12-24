@@ -36,7 +36,8 @@ PRODUCT_COPY_FILES += \
 # We need to build the GPS interposition library for the GPS to work, also M removes
 # libstlport, but some of our blobs need it, so we add it back in source
 PRODUCT_PACKAGES += \
-	libdmitry
+    libdmitry
 
 PRODUCT_PACKAGES += \
+    SamsungServiceMode \
     libsecril-client
